@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    min-width: 900px;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    font-family: Roboto, Avenir, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* HEADER */
+.header {
+    background: green;
+    height: 70px;
+    padding: 15px 0 4px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.container-float {
+    max-width: 1200px;
+    background: red;
+    margin: 0 auto 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.container-float::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.logo {
+    position: absolute;
+    padding-left: inherit;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding-bottom: 100;
+    background: khaki;
+
+}
+
+.nav {
+    text-align: right;
+}
+
+.list {
+    margin: 0;
+    font-size: 0;
+}
+
+.list-item {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.list-item>a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+.list-item>a:hover {
+    color: lightgreen;
+}
+
+/* MAIN */
+.main {
+    background: lime;
+}
+
+.hero-section {
+    background: aqua;
+}
+
+.main-content {
+    background: blue;
+    float: left;
+    width: 70%
+}
+
+.side-content {
+    background: pink;
+    float: right;
+    width: 30%
+}
+
+/* CONTENT_INFO */
+.content-info {
+    background: green;
+    clear: both;
+}
+
+.links {
+    background: lightgreen;
+}
+
+.footer {
+    background: purple;
+    clear: both;
+}
